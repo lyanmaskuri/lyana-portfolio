@@ -1,26 +1,27 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f5e1f2;
-  --foreground: #f2ddef;
+  --background: #ffffff;
+  --foreground: #18181b;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #ffc0e2;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Aesthetic soft pink text selection highlight */
+::selection {
+  background-color: #fce7f3;
+  color: #831843;
 }
