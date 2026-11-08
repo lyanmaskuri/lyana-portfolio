@@ -41,7 +41,7 @@ export default function About() {
         {/* Categorized Skills Grid */}
         <div className="flex flex-col gap-6 pt-4">
           <h3 className="text-xl font-bold text-zinc-900">
-            Tech Stack &amp; Skills
+            Tech Stack & Skills
           </h3>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">

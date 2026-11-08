@@ -59,10 +59,10 @@ export default function Experience() {
         {/* Section Header */}
         <div className="flex flex-col gap-3">
           <span className="text-xs font-semibold tracking-wider uppercase text-pink-600">
-            Career &amp; Leadership
+            Career & Leadership
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900">
-            Experience &amp; Activities.
+            Experience & Activities.
           </h2>
           <p className="text-zinc-600 max-w-xl text-base sm:text-lg">
             A timeline of my work experience, leadership roles, and specialized technical programmes.
@@ -114,7 +114,7 @@ export default function Experience() {
         {/* Certifications Row */}
         <div className="pt-4 flex flex-col gap-4">
           <h3 className="text-xs font-semibold tracking-wider uppercase text-zinc-600">
-            Certifications &amp; Credentials
+            Certifications & Credentials
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {certifications.map((cert) => (

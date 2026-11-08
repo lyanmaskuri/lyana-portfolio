@@ -6,10 +6,7 @@ export default function Contact() {
   return (
     <footer id="contact" className="py-24 border-t border-zinc-100">
       {/* Featured Callout Banner Card */}
-      <div className="relative rounded-3xl bg-gradient-to-b from-white to-pink-50/40 border border-pink-200/80 p-8 sm:p-14 shadow-xl shadow-pink-100/50 max-w-3xl mx-auto overflow-hidden text-center flex flex-col items-center gap-8">
-        {/* Soft background ambient blob */}
-        <div className="absolute -top-12 -right-12 w-48 h-48 bg-pink-200/40 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute -bottom-12 -left-12 w-48 h-48 bg-rose-200/40 rounded-full blur-3xl pointer-events-none" />
+      <div className="rounded-3xl bg-white border border-pink-200 p-8 sm:p-14 shadow-md shadow-pink-100/40 max-w-3xl mx-auto text-center flex flex-col items-center gap-8">
 
         {/* Availability Badge */}
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-white text-pink-700 border border-pink-200 shadow-sm">
@@ -60,7 +57,7 @@ export default function Contact() {
 
         {/* Footer Signature */}
         <div className="pt-8 border-t border-pink-100/80 w-full text-xs text-zinc-600 flex flex-col sm:flex-row items-center justify-between gap-2">
-          <span>Designed &amp; Built with Next.js &amp; Tailwind CSS</span>
+          <span>Designed & Built with Next.js & Tailwind CSS</span>
           <span>Puteri Nur Lyana • Shah Alam, Malaysia</span>
         </div>
       </div>

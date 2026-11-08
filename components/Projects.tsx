@@ -42,7 +42,7 @@ export default function Projects() {
             <span>Featured Projects</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900">
-            What I&apos;ve built &amp; developed.
+            What I&apos;ve built & developed.
           </h2>
           <p className="text-zinc-600 max-w-xl text-base sm:text-lg">
             A showcase of my academic, mobile, and full-stack projects across Flutter, Android, Web, and Machine Learning.
@@ -54,11 +54,8 @@ export default function Projects() {
           {projects.map((project) => (
             <div
               key={project.title}
-              className="group relative flex flex-col justify-between p-7 rounded-3xl bg-white/95 backdrop-blur-sm border border-zinc-200/90 hover:border-pink-300 hover:shadow-xl hover:shadow-pink-100/60 transition-all duration-300 overflow-hidden"
+              className="group relative flex flex-col justify-between p-7 rounded-3xl bg-white border border-zinc-200 hover:border-pink-300 hover:shadow-lg hover:shadow-pink-100/50 transition-all duration-300"
             >
-              {/* Subtle top accent bar */}
-              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-pink-400 to-rose-300 opacity-60 group-hover:opacity-100 transition-opacity" />
-
               <div className="flex flex-col gap-4">
                 {/* Header with Project Icon & Badge */}
                 <div className="flex items-center justify-between">
