@@ -1,40 +1,43 @@
 export default function Hero() {
   return (
-    <section className="pt-24 pb-16 flex flex-col items-center text-center sm:items-start sm:text-left gap-6">
-      {/* Availability Badge */}
-      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium bg-emerald-50 text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800">
-        <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-        Available for new opportunities
+    <section className="pt-24 pb-20 flex flex-col items-center md:items-start text-center md:text-left gap-6">
+      {/* Subtle Pink Status Badge */}
+      <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-medium bg-pink-50 text-pink-700 border border-pink-200">
+        <span className="w-2 h-2 rounded-full bg-pink-500 animate-pulse" />
+        <span>Open for new projects &amp; learning</span>
       </div>
 
-      {/* Main Heading */}
-      <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-zinc-900 dark:text-white max-w-2xl">
-        Hi, I&apos;m <span className="text-blue-600 dark:text-blue-400">Lyana</span> — Full-Stack Developer
+      {/* Main Heading: Deep Charcoal with Pink Highlight */}
+      <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-zinc-900 leading-[1.15]">
+        hi there, I&apos;m{" "}
+        <span className="text-pink-500">
+          Lyana
+        </span>
       </h1>
 
-      {/* Tagline */}
-      <p className="text-lg sm:text-xl text-zinc-600 dark:text-zinc-400 max-w-xl leading-relaxed">
-        I design and build fast, responsive web applications with modern tech stacks like Next.js, React, and TypeScript.
+      {/* Tagline: Clear, high-contrast dark gray text on white background */}
+      <p className="text-base sm:text-lg text-zinc-600 max-w-xl leading-relaxed">
+        A student that loves to learn new technologies.
       </p>
 
-      {/* Call to Action (CTA) Buttons */}
-      <div className="flex flex-col sm:flex-row items-center gap-4 pt-2 w-full sm:w-auto">
-        {/* Scroll to Projects button */}
-        <a
-          href="#projects"
-          className="w-full sm:w-auto px-6 py-3 rounded-lg font-medium text-sm text-white bg-zinc-900 hover:bg-zinc-800 dark:bg-white dark:text-black dark:hover:bg-zinc-200 shadow-sm transition-all text-center"
-        >
-          View My Work
-        </a>
+      {/* Action Buttons */}
+      <div className="flex flex-wrap items-center gap-4 pt-2">
+  {/* View Projects */}
+  <a
+    href="#projects"
+    className="px-6 py-3 rounded-full font-medium text-sm text-white bg-pink-500 hover:bg-pink-600 shadow-sm shadow-pink-200 transition-all hover:scale-105 active:scale-95"
+  >
+    view projects
+  </a>
 
-        {/* Contact Me button */}
-        <a
-          href="#contact"
-          className="w-full sm:w-auto px-6 py-3 rounded-lg font-medium text-sm text-zinc-700 dark:text-zinc-300 border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-800/60 transition-all text-center"
-        >
-          Contact Me
-        </a>
-      </div>
+  {/* Say Hello (White with matching hover & click animation) */}
+  <a
+    href="#contact"
+    className="px-6 py-3 rounded-full font-medium text-sm text-zinc-800 bg-white border border-zinc-200 hover:bg-zinc-50 hover:border-zinc-300 shadow-sm transition-all hover:scale-105 active:scale-95"
+  >
+    say hello
+  </a>
+</div>
     </section>
   );
 }
