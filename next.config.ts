@@ -1,11 +1,11 @@
 import type { NextConfig } from "next";
 
-const isProd = process.env.NODE_ENV === "production";
-const repoName = "/lyana-portfolio";
+// GitHub Actions always sets GITHUB_ACTIONS=true in workflow runners
+const isGithubActions = process.env.GITHUB_ACTIONS === "true";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: isProd ? repoName : "",
+  basePath: isGithubActions ? "/lyana-portfolio" : "",
   images: {
     unoptimized: true,
   },
